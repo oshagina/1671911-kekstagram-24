@@ -15,7 +15,7 @@ const randomInteger = (min, max) => {
 randomInteger(10,20);
 
 //Функция для проверки максимальной длины строки
-function checkWordLength('word', maxLength){
+function checkWordLength(word, maxLength){
     if (word.length>maxLength){
         return false;
     } 
