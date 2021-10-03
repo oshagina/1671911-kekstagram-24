@@ -1,13 +1,10 @@
-const { stream } = require("browser-sync");
-
 function getSum(a,b){
-const description="Сумма двух чисел равна";
+const description='Сумма двух чисел равна';
 const sum=a+b;
 return description+' '+sum;
 };
+getSum(1,2);
 
-
-//
 const randomInteger = (min, max) => {
     if(min>=0&&max>0&&max>min){
         return Math.floor(Math.random() * (max - min + 1) + min);
@@ -15,11 +12,10 @@ const randomInteger = (min, max) => {
     alert('error!!!');
     };
   
-    alert(randomInteger(10,20));
+randomInteger(10,20);
 
 //Функция для проверки максимальной длины строки
-let word;
-function checkWordLength(word, maxLength){
+function checkWordLength('word', maxLength){
     if (word.length>maxLength){
         return false;
     } 
