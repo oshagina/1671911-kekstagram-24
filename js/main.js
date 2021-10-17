@@ -55,14 +55,12 @@ const MAX_COMMENTS_FOR_EACH_FOTO = 4;
 // функция поиска случайного элемента в переданном массиве
 const getRandomArrayElement = (elements) => elements[randomInteger(0, elements.length - 1)];
 //функция создания  случайных описаний и имен к одной фото
-const createCommentsOneFoto = () => {
-  return {
-    id:randomInteger(1,300),
-    avatar:'img/avatar-'+randomInteger(1,6)+'.svg',
-    message: getRandomArrayElement(MESSAGIES),
-    name: getRandomArrayElement(NAMES),
-  };
-};
+const createCommentsOneFoto = () => ({
+  id:randomInteger(1,300),
+  avatar:`img/avatar-${randomInteger(1,6)}.svg`,
+  message: getRandomArrayElement(MESSAGIES),
+  name: getRandomArrayElement(NAMES),
+});
 createCommentsOneFoto();
 
 //фунция создания  массива определенной длины из случайных комментариев  к фото
@@ -77,7 +75,7 @@ const createDescriptionEachFoto=()=>{
   const i=randomInteger(1,MAX_QUANTITY_FOTOS);
   return{
     id:i,
-    url:'photos/'+i+'.jpg',
+    url:`photos/${i}.jpg`,
     description: getRandomArrayElement(DESCRIPTIONS),
     comments: getArrayCommentsEachFoto,
   };
@@ -88,4 +86,3 @@ const createDescriptionEachFoto=()=>{
 const getArrayDescriptionsAllFotos = Array.from({length: MAX_QUANTITY_FOTOS}, createDescriptionEachFoto);
 
 getArrayDescriptionsAllFotos;
-
