@@ -1,5 +1,5 @@
-import{getRandomPositiveInteger} from './get-random-positive-integer.js';
-import{getRandomArrayElement} from './get-Random-Array-Element';
+import{getRandomPositiveInteger} from './random-positive-integer.js';
+import{getRandomArrayElement} from './random-array-element';
 
 const NAMES = [
   'Иван',

@@ -1,6 +1,6 @@
-import{getRandomPositiveInteger} from './get-random-positive-integer.js';
-import{getRandomArrayElement} from './get-Random-Array-Element';
-import{getArrayCommentsEachFoto} from './get-Array-Comments-Each-Foto';
+import{getRandomPositiveInteger} from './random-positive-integer.js';
+import{getRandomArrayElement} from './random-array-element';
+import{getArrayCommentsEachFoto} from './array-comments-each-foto';
 
 const DESCRIPTIONS = [
   'La bella vita',

@@ -1,6 +1,6 @@
-function getSum(aaa,bbb){
+function getSum(a,b){
   const description='Сумма двух чисел равна';
-  const sum=aaa+bbb;
+  const sum=a+b;
   return `${description  } ${ sum}`;
 }
 getSum(1,2);
