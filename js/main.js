@@ -5,3 +5,5 @@ import{getArrayDescriptionsAllFotos} from './array-descriptions-all-fotos.js';
 
 getArrayDescriptionsAllFotos;
 
+import{pictures} from './miniatures.js';
+pictures;
